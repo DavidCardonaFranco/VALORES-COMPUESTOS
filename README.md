@@ -30,3 +30,31 @@ namespace Estructura_Referencia_Clase
         }
     }
 }
+
+-------------------------------------------------------------------------------------
+
+2. CLASE.
+
+using System;
+
+namespace Estructura_Referencia_Clase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Círculo nuevoCírculo = new Círculo();
+            Console.WriteLine("El área del círculo es de: " + nuevoCírculo.calcularÁrea(5.1));
+        }
+    }
+
+    public class Círculo
+    {
+        static double pi = 3.1415;
+        public double calcularÁrea (double radio)
+        {
+            return (pi * Math.Pow(radio, 2));
+        }
+    }
+}
+
