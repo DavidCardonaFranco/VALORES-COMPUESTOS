@@ -1,0 +1,43 @@
+1.Arreglo con Estructura.
+
+
+
+
+
+2.Arreglo con clases.
+using System;
+
+namespace Proyecto_enc
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+           popr nuevo=new Cálculo();
+            Console.Write("la suma de los dos numeros es: "+nuevo.Sumar(1));
+        }
+
+
+
+    }
+    public class Cálculo
+    {
+
+        public int Sumar(int num1)
+        { 
+            int total=0;
+            int [] suma={3,42,38,74,1};
+           for (int i = 0; i <suma.Length; i++)
+           {
+
+             total+=suma[i];
+
+
+           }
+           return total*num1;
+        }
+
+    }
+}
