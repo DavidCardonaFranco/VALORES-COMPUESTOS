@@ -1,0 +1,71 @@
+1.Arreglos simples.
+using System;
+
+namespace Estructura_Referencia_Clase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] nombreEstudiantes = new string[3] { "David", "Alejandro", "Rafael" };
+            for (int i = 0; i < nombreEstudiantes.Length; i++)
+            {
+                Console.WriteLine(nombreEstudiantes[i]);
+            }
+
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------------
+2.1.Arreglos multidimensionales 2d
+using System;
+
+namespace Estructura_Referencia_Clase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] arreglo2d = new int[2, 3] { { 10, 5, 100 },{ 50, 75, 25 } };
+
+            foreach (int i in arreglo2d)
+            {
+                Console.Write("|"+i+"|");
+            }
+        }
+    }
+}
+
+2.2.Arreglos multidimensionales 3d
+using System;
+
+namespace Estructura_Referencia_Clase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,,] arreglo3d = new int[2, 2, 3] {
+                                {//primera capa
+                                    { 55, 25, 30 },//Primera fila
+                                    { 100, 55, 10 }// Segunda fila
+                                },
+                                {//Segunda capa
+                                    { 125, 60, 75 },//Primera fila
+                                    { 99, 15, 150 }// Segunda fila
+                                } };
+
+            foreach (int i in arreglo3d)
+            {
+                Console.Write("|" + i + "|");
+            }
+        }
+    }
+}
+
+---------------------------------------------------------------------------------
+
+
+
